@@ -1,0 +1,147 @@
+
+                                    Introduction                                                   
+
+----------------------------------------------------------------------------------------------------
+Oops: oops stands for object oriented programming language
+
+Note : Normally we do procedural programming where we define function and resuse that function multiple times in different blocks of code 
+                                         |
+                                         |
+           Oops is a level up of procedural programming language.
+
+
+                          Oops -> classes,objets
+                                   |
+ We can solve our problem while coding with the help of Oops conecpt and its totally optional to use Oops. But the use of Oops while coding helps us to solve our problem easily .
+
+
+Oops:- Oops means mapping real world objects(i.e. Mouse,pen,desktop screen,etc) with code.
+-> Generally we use the concept of classes and objects when we want to simulate real world entities into Code.
+-> Class is a blueprint for the objects. class is a contaioner and object is a real world entitiy which we put in container and use the same.
+
+----------------------------------------------------------------------------------------------------
+
+                                       Classes and Objects
+
+Class :- Class is a blueprint of an object.
+Object :- Object is an instance of Class.
+
+----------------------------------------------------------------------------------------------------
+
+                                  Attributes & Methods
+
+Class & Objects
+ |
+ |________________Blueprint of Objects
+                         |
+        _________________|_____________________
+        |                                       |
+       Prperties/attributes                    Behaviour/Methods
+
+-------------------------------------------------------------------------------------------------       
+                                Constructor
+
+Constructor:- constructor in oops is a function which is used to construct an object
+
+ex:  __init__Method
+    
+
+         init is used to initialize an object 
+        |      self is storing instance of class,means it stores current refernce of object      
+        |     |
+def __init__(self):
+        print("this is a constructor)
+
+Note: __init__method is called every time when we create an object.
+      self -> compulsory to write for all the instance methods         
+
+---------------------------------------------------------------------------------------------------              
+                             Types of Constructor
+1. Default Constructor
+2. Parametrized Constructor
+
+->Default Constructor: Those Constructors which have only one parameter which is self parameter are Deafault constructor.
+
+->Parameterized Constructor: Those Constructors which have more (with self) then one parameter are Parameterized constructor.
+
+Note : In python for a class we dont have more then one constructor(means we can't define 2 constructors i.e. default and parameterized in a class)
+
+---------------------------------------------------------------------------------------------------
+
+                                       Attributes
+
+-> Attributes: Attributes are basically properties, Attributes are of 2 types: class attributes and instance attributes                                   
+
+-> Class Attributes: Class attributes are those attributes which belongs to class. 
+   class attributes are common for all objects.
+
+
+-> Instance Attributes: Instance attributes are those attributes which belongs to object.
+    instance attributes may be unique or different for objects.
+
+
+ Example: For any student in same college:- 
+   the instance attributes are: name, subject, class,cgpa,rank
+   the class attributes are: College name, college address
+          
+----------------------------------------------------------------------------------------------------------------
+                                               Methods
+
+Instance, Class and static methods 
+
+
+      Instance                               class                             static
+----------------------------------------------------------------------------------------------------------------
+1.   1st parameter is self always       1st parameter is cls                  There is no compulsary parameter in            
+                                                                               static methods nor self nor cls
+
+2.   Can access the class & as well     Can access only class attributes       They don't  have the access of class                                                                   
+     as the intance attributes          dont have access to instance            and instamce methods 
+                                        attribute
+
+3.                                      class method have a decorator            static method have a decorator 
+                                        @classmethod                              @staticmethod     
+
+                                        
+-----------------------------------------------------------------------------------------------------------------
+
+                                     ***************Oops Pillar**************
+
+1. Encapsulation
+2. Inheritance
+3. Abstraction
+4. Polymorphism
+
+
+--> Encapsulation:- Encapsulation means wrapping data & functions into single unit--datahiding
+   
+     Data hiding have 3 attributes:
+     1. Public: accessible inside and outside the class, Accessible all over the code 
+     2. Protected : Accessible inside class and sub class only
+     3. Private : Can be accessible only inside the class 
+
+Note: If we want to use private attributes outside the class then we can use the concept og getters and setters
+
+
+--> Inheritance: Inheritance means reusing of attributes and methods from a Parent(Base) class.
+
+   Types of Inheritance : There are mainly three types of Inheritance
+
+   1. Single Level Inheritance
+   2. Multilevel Inheritance
+   3. Multiple Inheritance
+
+
+  Single Level Inheritance:-  A child inherits from one parent. 
+
+                             # Parent → Child
+
+                             class Parent:  
+                                 def display(self):  
+                                        print("Parent class") 
+
+                             class Child(Parent):  
+                                  pass  
+                                  
+                             c = Child()  
+                             c.display() # Output: Parent class 
