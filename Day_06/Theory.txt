@@ -1,0 +1,20 @@
+File I/O :- File I/O in Python stands for the file input and output
+
+There are differnt format of files like .txt, .csv, etc..
+
+File I/O is used where we need to raed and write the files 
+what we will learn in this section
+1)Open-> how to open a file
+2)Opeartions-> we perform multiple operations here like read, write,apend of file file 
+3)close -> close of file
+4)delete -> deletion of file
+--------------------------------------------------------------------
+File Operations:
+Open, Read & close
+                    mode
+syntax:-              |    
+  f = open("data.txt","r")
+             |
+             File Name or path 
+
+ example:- f= open("data.txt",)            

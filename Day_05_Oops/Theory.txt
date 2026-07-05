@@ -145,3 +145,31 @@ Note: If we want to use private attributes outside the class then we can use the
                                   
                              c = Child()  
                              c.display() # Output: Parent class 
+
+
+----------------------------------------------------------------------------------------------------------------
+
+-> Abstraction:- Abstraction means is hiding internal details & showing only essential features.
+       To implemet abstraction in python we use abstract classes.
+
+  -> Abstract classes: Abstract classes are those classes which are the blueprint for other classes. abstract
+      classes dont have their instances or classes by this we only create other classes(its a blueprint).
+
+  Abstract classes is a part of abc(abstraction base classes) module in python. by this module we will create
+  our abstract classes  
+
+
+
+
+  -> PolymorPhism:-  poly means many and morphism means forms 
+  multiple fnx --> same name means multiple functions should have same name   
+
+  ex:- Operator Overloading like (+) have different task first one is to add some values and the second one is to concatenate two or more strings together.
+
+  In python Polymorphism has two types 
+  1) Function Overriding
+  2) Duck Typing
+
+  **Function Overriding:-  Will held only there where Inheritance is involved means redefining the parent class functions in child class 
+
+  ** Duck Typing:- If something is walk like a duck and quacks like a duck then call that is duck 
